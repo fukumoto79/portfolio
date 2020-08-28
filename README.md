@@ -25,6 +25,7 @@ CRUDに基づいた記事投稿型App
 
 ## tweetsテーブル
 |Column|Type|Options|
+|------|----|-------|
 |image|text||	
 |text|text||	
 |user_id|integer|null: false, foreign_key: true|
@@ -35,6 +36,7 @@ CRUDに基づいた記事投稿型App
 
 ## commentsテーブル
 |Column|Type|Options|
+|------|----|-------|
 |text|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |tweet_id|integer|null: false, foreign_key: true|
