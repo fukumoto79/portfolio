@@ -1,24 +1,44 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 概要
+Rails練習用ポートフォリオ
 
-Things you may want to cover:
+# 仕様
+CRUDに基づいた記事投稿型App
 
-* Ruby version
+- 記事一覧・詳細表示
+- 記事編集・削除
+- ユーザー登録・編集
+- コメント
 
-* System dependencies
+# DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
 
-* Configuration
+### Association
+- has_many :tweets
+- has_many :comments
 
-* Database creation
+## tweetsテーブル
+|Column|Type|Options|
+|image|text||	
+|text|text||	
+|user_id|integer|null: false, foreign_key: true|
 
-* Database initialization
+### Association
+- belongs_to :user
+- has_many :comments
 
-* How to run the test suite
+## commentsテーブル
+|Column|Type|Options|
+|text|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|tweet_id|integer|null: false, foreign_key: true|
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :tweet
+- belongs_to :user
