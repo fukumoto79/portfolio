@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pictweet</title>
+    <title>BookReview</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,7 +11,7 @@
   <body>
       <header class="header">
     <div class="header__bar row">
-      <h1 class="grid-6"><a href="/">PicTweet</a></h1>
+      <h1 class="grid-6"><a href="/">BookReview</a></h1>
       <% if user_signed_in? %>
         <div class="user_nav grid-6">
           <span><%= current_user.nickname %>
@@ -35,7 +35,7 @@
       <%= yield %>
     <footer>
       <p>
-        Copyright PicTweet 2019.
+        Copyright BookReview 2020.
       </p>
     </footer>
   </body>
