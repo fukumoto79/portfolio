@@ -7,8 +7,8 @@
 https://portfolio79.herokuapp.com
 
 【テスト用アカウント】
-メールアドレス：sample@sample.com
-パスワード：aaaa1111
+- メールアドレス：sample@sample.com
+- パスワード：aaaa1111
 
 # 仕様
 CRUDに基づいた記事投稿型Appです。
