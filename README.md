@@ -4,7 +4,7 @@
 ## BookReview
 書評投稿Webアプリケーション
 手軽に書評を残すことができます。写真のイメージ画像と合わせて投稿できるので、パッと見で何の本の投稿か判断できます。また、コメント機能も搭載しています。
-(https://gyazo.com/b01e5c34119e2304efdda293949aaced)
+
 https://portfolio79.herokuapp.com
 
 【テスト用アカウント】
